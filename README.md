@@ -94,6 +94,27 @@ namespace Tietokantaa
         }
     }
 
+    class Team
+    {
+       /* private int teamId;
+         private string name;
+       */
+
+        public int TeamId    { get { return teamId; } }
+        public string Name   { get { return name; } }
+
+        public Team(int id, string nm)
+        {
+            teamId = id;
+            name   = nm;
+        }
+
+        public void AddTeam()    
+        public void RemoveTeam() 
+        public override string ToString() { return name; }
+    }
+
+
     class DataService
     {
         private OleDbConnection myConnection;
